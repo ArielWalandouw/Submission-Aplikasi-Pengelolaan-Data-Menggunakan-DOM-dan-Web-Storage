@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bookshelf Apps</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <h1>Bookshelf app</h1>
+  </header>
+
+  <div class="wrapper">
+
+    <div class="container bg-white shadow" id="add-todo">
+
+      <h2 class="container-header text-center">
+        Masukan buku baru
+      </h2>
+
+      <form class="form" id="form">
+        <div class="form-group form-title">
+          <label for="title">Judul buku</label>
+          <input type="text" id="title" name="title" required />
+        </div>
+
+        <div class="form-group form-author">
+          <label for="author">Penulis Buku</label>
+          <input type="text" id="author" name="author" required />
+        </div>
+
+        <div class="form-group form-title">
+          <label for="date">Tahun</label>
+          <input type="date" id="date" name="date" required />
+        </div>
+
+        <input type="submit" value="Masukan buku ke dalam rak belum selesai dibaca" name="Submit" class="btn-submit" />
+      </form>
+
+      <br>
+      <br>
+    </div>
+
+    <div class="container">
+      <h2 class="container-header">Belum selesai dibaca</h2>
+      <div class="list-item" id="todos"></div>
+    </div>
+
+    <div class="container">
+      <h2 class="container-header">Sudah selesai dibaca</h2>
+      <div class="list-item" id="completed-todos"></div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
